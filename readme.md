@@ -113,3 +113,19 @@ The server serves static files from the `public` directory.
 
 ## Deployment to Google cloud with CLI
 ... Coming soon! 🤓
+
+
+
+
+# Mock exam exercise 1
+To start the exercise server do
+```sh
+npm run task1
+```
+assuming you have installed dependencies and etc.
+
+Go to `http://localhost:8080/magic-header` and see the Authorization bearer token provided.
+
+Then call `http://localhost:8080/final-answer` with the token as shown below
+
+![Exercise 1 request](task1.png)
