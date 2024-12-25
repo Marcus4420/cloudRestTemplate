@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 /**
  * Basic fetch from other resources on GET request
   app.get('/api', (req, res) => {
-  fetch('https://jsonplaceholder.typicode.com/todos/1')
+  fetch('https://jsonplaceholder.typicode.com/todos/1') //Replace with your url
   .then(response => response.json())
   .then(json => res.send(json))
 */
@@ -58,7 +58,7 @@ async function postData(url = '', data = {}) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
-      'Authorization': 'Bearer ' + token
+      'Authorization': 'Bearer ' + token // if needed
     },
     body: JSON.stringify(data)
   });
@@ -73,7 +73,7 @@ async function getData(url = '') {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
-      'Authorization': 'Bearer ' + token
+      'Authorization': 'Bearer ' + token // if needed
     },
   });
   return response.json();
